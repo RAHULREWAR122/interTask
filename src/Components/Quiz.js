@@ -34,7 +34,7 @@ const questions = [
 
 
 const Quiz = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [currentQuestion , setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
     
@@ -66,6 +66,10 @@ const Quiz = () => {
         setCurrentQuestion(prevQuestionIndex);
       }
     };
+
+    const Result = () => {
+        setShowScore(true)
+    };
   
     return (
       <div className="flex flex-col items-center justify-center h-screen">
@@ -90,7 +94,7 @@ const Quiz = () => {
                   Next
                 </button>
               )}
-            {currentQuestion === 4   && <button className="text-[20px] hover:text-blue-400">Result</button>}  
+            {currentQuestion === 4   && <button onClick={Result} className="text-[20px] hover:text-blue-400">Result</button>}  
             </div>
           </>
         )}
