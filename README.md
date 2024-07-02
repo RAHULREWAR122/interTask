@@ -1,3 +1,3 @@
 # MCQ Game 
 
-# live [text](https://mcqgame.netlify.app/)
+# live [Click](https://mcqgame.netlify.app/)
