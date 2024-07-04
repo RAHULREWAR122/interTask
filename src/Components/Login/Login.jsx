@@ -1,20 +1,19 @@
 import React from "react";
-import style from "./signUp.module.css";
+import style from "./log_in.module.css";
 import { FaFacebookF } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-function SignUp() {
 
+function Login() {
   return (
-    <div className={style.signUp}>
+    <div className={style.log__in}>
       <div className={style.form}>
         <div className={style.logo}>
           <img
-            src="/logo.webp"
-            alt="logo"
+            src="/logo.webp"alt="logo"
           />
         </div>
-        <h2 className={style.page}>Sign Up</h2>
+        <h2 className={style.page}>Log in</h2>
         <div className={style.buttons}>
           <span>
             <img src="/google.png" alt="google icon" /> <button>Google</button>
@@ -24,30 +23,31 @@ function SignUp() {
           </span>
         </div>
 
-        <div className={style.signup_container}>
-          <div className={style.signup_form}>
+        <div className={style.login_container}>
+          <div className={style.login_form}>
             <form>
-              <label>
-                Full Name
-                <input type="text" name="fullname" placeholder="Ram" />
-              </label>
               <label>
                 Email Address
                 <input type="email" name="email" placeholder="xyz@gmail.com" />
               </label>
               <label>
                 Password
-                <input type="password" name="password" />
+                <input type="password" name="myPassword" placeholder="Password" />
               </label>
-              <label>
-                <input type="checkbox" name="terms" />
-                By creating an account you agree to the
-                <a href="/#"> terms of use </a> and
-                <a href="/#"> privacy policy</a>.
+              <label
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <span>
+                  <input type="checkbox" name="terms" />
+                  Remember me
+                </span>
+                <a href="/#"> Reset Password? </a>
               </label>
-              <NavLink className={style.sign_up} to="/#">Create account</NavLink>
+              <NavLink className={style.log_in} to="/#">
+                Log in
+              </NavLink>
               <div className={style.login_link}>
-                Already have an account? <NavLink to="/login">Log in</NavLink>
+                Don't have account yet? <NavLink to="/">New Account</NavLink>
               </div>
             </form>
           </div>
@@ -57,4 +57,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Login;

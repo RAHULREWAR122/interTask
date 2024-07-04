@@ -1,12 +1,13 @@
 import React from "react";
-import style from "./signUp.module.css";
+import style from "./sign_Up.module.css"
 import { FaFacebookF } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 function SignUp() {
 
-  return (
-    <div className={style.signUp}>
+  return (<>
+
+    <div className={style.sign__Up}>
       <div className={style.form}>
         <div className={style.logo}>
           <img
@@ -54,7 +55,7 @@ function SignUp() {
         </div>
       </div>
     </div>
-  );
+    </>  );
 }
 
 export default SignUp;
