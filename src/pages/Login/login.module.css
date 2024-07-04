@@ -1,0 +1,146 @@
+.login {
+  width: 100%;
+  min-height: 70vh;
+  margin-top: 20px;
+}
+
+.form {
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  gap: 0px;
+  opacity: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background: #ddd1d1;
+  border-radius: 50%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.page {
+  font-family: "poppins";
+  font-weight: 600;
+  color: #030229;
+  opacity: 0.7;
+}
+.buttons {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.buttons span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: #dfdfe9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.buttons span:hover {
+  background: #d6e2e8c1;
+}
+.buttons span img {
+  width: 15px;
+  height: 15px;
+}
+
+.buttons span button {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login_form {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "poppins";
+  width: 90%;
+}
+
+.login_form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form label {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.login_form input[type="text"],
+.login_form input[type="email"],
+.login_form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "poppins";
+}
+
+.login_form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login_form .log_in {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.login_form .log_in:hover {
+  text-decoration: none;
+  background-color: #e6b800;
+}
+
+.login_form a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login_form a:hover {
+  text-decoration: underline;
+}
+
+.login_link {
+  margin-top: 20px;
+  text-align: center;
+}
