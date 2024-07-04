@@ -1,3 +1,3 @@
 # InternTask-1 
-# live [Click](https://intertask1.netlify.app/)
+# live [Click](https://inter-task-one.vercel.app/)
 
