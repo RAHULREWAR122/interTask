@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
-import style from "./nav.module.css";
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+import style from './nav.module.css';
 
 function Navbar() {
   return (
@@ -9,45 +9,36 @@ function Navbar() {
         <ul>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? style.active : undefined
-              }
+              className={({ isActive }) => (isActive ? style.active : undefined)}
               to="/"
             >
               SignUp
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? style.active : undefined
-              }
+              className={({ isActive }) => (isActive ? style.active : undefined)}
               to="/joinUs"
             >
               JoinUs
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? style.active : undefined
-              }
+              className={({ isActive }) => (isActive ? style.active : undefined)}
               to="/login"
             >
               Login
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? style.active : undefined
-              }
+              className={({ isActive }) => (isActive ? style.active : undefined)}
               to="/profile"
             >
               Profile
-            </NavLink>{" "}
+            </NavLink>
           </li>
-         
         </ul>
       </nav>
       <Outlet />

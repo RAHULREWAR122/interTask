@@ -9,8 +9,7 @@ function Login() {
       <div className={style.form}>
         <div className={style.logo}>
           <img
-            src="https://images.pexels.com/photos/2235130/pexels-photo-2235130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="logo"
+            src="/logo.webp"alt="logo"
           />
         </div>
         <h2 className={style.page}>Log in</h2>

@@ -4,12 +4,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 function SignUp() {
+
   return (
     <div className={style.signUp}>
       <div className={style.form}>
         <div className={style.logo}>
           <img
-            src="https://images.pexels.com/photos/2235130/pexels-photo-2235130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/logo.webp"
             alt="logo"
           />
         </div>
